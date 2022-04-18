@@ -1,0 +1,60 @@
+/* Local de importar as fontes usadas na plataforma */
+
+/* Reset da pagina html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DinoGame */
+/* Imagem de fundo */
+body {
+    background: #fafafa;
+}
+
+/* Dinossauro */
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+/* cactus */
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(../assets/cactus.png);
+}
+
+.gameOver {
+    text-align: center;
+    color: #656565;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+/*Server para definir etapas de uma animacao*/
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+} 
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(../assets/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 6000s infinite linear;
+    width: 100%;
+    height: 200px;
+}
