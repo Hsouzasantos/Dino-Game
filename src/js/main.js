@@ -7,7 +7,6 @@ let isJumping = false;
 let position = 0; /*Posicao do Dino */
 
 // Funcao para verificar se o botao apertado eh o espaco e para realizar o pulo no caso de ser
-// 
 function handleKeyUp(event) {
     if(event.keyCode === 32){
         if(!isJumping){
@@ -42,7 +41,6 @@ function jump() {
 }
 
 // Gera a posicao dos cactos
-
 function createCactus () {
     const cactus = document.createElement('div'); /*Cria o elemento do cacto no HTML */
     let cactusPosition = 1000; /*Recebe a posicao do cacto inicialmente */
